@@ -10,7 +10,7 @@ words = load_words()
 longestWords = ["x"]
 
 for x in words:
-    if not(re.search("[gkmqvwxzit]", x)):
+    if not(re.search("[gkmqvwxzi]", x)):
         if len(x) > len(longestWords[-1]):
             longestWords.clear()
             longestWords.append(x)
